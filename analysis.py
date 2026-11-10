@@ -56,4 +56,4 @@ def evaluate(data):
         }
         matrices[name] = confusion_matrix(truth, prediction, labels=[False, True])
     return pd.DataFrame.from_dict(scores, orient="index"), matrices
-analysis.py 표시 중입니다.
+analysis.py 
