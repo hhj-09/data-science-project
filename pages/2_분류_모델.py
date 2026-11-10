@@ -24,5 +24,3 @@ for name, matrix in matrices.items():
     st.markdown(f"**{name}**")
     st.dataframe(pd.DataFrame(matrix, index=["실제 정상","실제 손실"], columns=["예측 정상","예측 손실"]))
 st.caption("각 칸의 단위는 관측 행입니다. 이 평가는 같은 시점의 상태 분류를 다루며, 손실 발생 전 경보의 성능은 별도 검증이 필요합니다.")
-축소
- 1/4페이지
