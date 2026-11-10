@@ -38,4 +38,3 @@ st.subheader("센서 간 관련성")
 st.write("선택한 센서와 다른 센서의 피어슨 상관계수입니다. 부호는 변화 방향을, 절댓값은 선형 관계의 강도를 나타냅니다.")
 corr = data[FEATURES].corr()[sensor].drop(sensor).sort_values(key=abs, ascending=False)
 st.bar_chart(corr.rename("상관계수"), horizontal=True)
-1_탐색.py 표시 중입니다.
